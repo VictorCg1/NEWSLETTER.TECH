@@ -1,0 +1,128 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+/* Positioning */
+.cabeçalho{
+    margin-top: 35%;
+}
+.cabeçalho-2{
+    margin-top: 10%;
+}
+.container {
+	min-height: 100%;
+}
+
+.center {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.apple {
+	/* Text Background Effect */
+
+	background: url("/images/aurora.png");
+	-webkit-background-clip: text;
+	color: transparent;
+
+	/* Other */
+
+	font-family: "Roboto", sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	animation: slice 3s, dynamic 7s infinite alternate linear;
+	white-space: nowrap;
+}
+
+* {
+	user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+	.apple {
+		font-size: 70px;
+	}
+}
+
+/* Slice Animation */
+
+@keyframes slice {
+	0% {
+		line-height: 0%;
+	}
+
+	100% {
+		line-height: 100%;
+	}
+}
+
+/* Dynamic Background Animation */
+
+@keyframes dynamic {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 100%;
+	}
+}
+
+/* Watermark */
+
+.links {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+
+a {
+	color: #313131;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    text-justify: distribute-all-lines;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+
+a.nav-link{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.active{
+	background: var(--main-decor-color);
+}
+
+.nav-link:hover {
+	color: #000000;
+    background: var(--main-decor-color);
+}
+
+.fotoIA{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:40%;
+    width:40%;
+}
